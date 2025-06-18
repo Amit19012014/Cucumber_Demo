@@ -19,7 +19,7 @@ public class StepDefinations {
     public void navigateToLoginPage() {
 
         driver=new ChromeDriver();
-        driver.get("https://demo.nopcommerce.com/");
+        driver.get("https://demos.ssserver.in/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
         driver.findElement(By.xpath("//a[normalize-space()='Log in']")).click();
