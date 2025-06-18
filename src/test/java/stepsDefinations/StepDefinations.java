@@ -7,7 +7,7 @@ import java.time.Duration;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import java.time.Duration;
 
@@ -18,7 +18,7 @@ public class StepDefinations {
     @Given("the user is on the nopCommerce login page")
     public void navigateToLoginPage() {
 
-        driver=new ChromeDriver();
+        driver=new EdgeDriver();
         driver.get("https://demos.ssserver.in/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
